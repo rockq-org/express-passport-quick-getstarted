@@ -4,17 +4,17 @@
  * Module dependencies.
  */
 
-const mongoose = require('mongoose');
-const notify = require('../mailer');
+var mongoose = require('mongoose');
+var notify = require('../mailer');
 
-// const Imager = require('imager');
-// const config = require('../../config');
-// const imagerConfig = require(config.root + '/config/imager.js');
+// var Imager = require('imager');
+// var config = require('../../config');
+// var imagerConfig = require(config.root + '/config/imager.js');
 
-const Schema = mongoose.Schema;
+var Schema = mongoose.Schema;
 
-const getTags = tags => tags.join(',');
-const setTags = tags => tags.split(',');
+var getTags = tags => tags.join(',');
+var setTags = tags => tags.split(',');
 
 /**
  * Article Schema

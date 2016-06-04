@@ -4,9 +4,9 @@
  * Module dependencies.
  */
 
-const mongoose = require('mongoose');
-const { wrap: async } = require('co');
-const Article = mongoose.model('Article');
+var mongoose = require('mongoose');
+var async = require('co').wrap;
+var Article = mongoose.model('Article');
 
 /**
  * List items tagged with a tag

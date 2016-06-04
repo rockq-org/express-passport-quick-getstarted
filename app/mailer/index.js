@@ -4,9 +4,9 @@
  * Module dependencies.
  */
 
-const Notifier = require('notifier');
-const jade = require('jade');
-const config = require('../../config');
+var Notifier = require('notifier');
+var jade = require('jade');
+var config = require('../../config');
 
 /**
  * Process the templates using swig - refer to notifier#processTemplate method

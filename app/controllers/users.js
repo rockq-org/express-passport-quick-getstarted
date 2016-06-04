@@ -4,9 +4,9 @@
  * Module dependencies.
  */
 
-const mongoose = require('mongoose');
-const { wrap: async } = require('co');
-const User = mongoose.model('User');
+var mongoose = require('mongoose');
+var async = require('co').wrap;
+var User = mongoose.model('User');
 
 /**
  * Load

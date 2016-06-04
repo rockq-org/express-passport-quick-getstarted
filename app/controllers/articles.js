@@ -4,11 +4,11 @@
  * Module dependencies.
  */
 
-const mongoose = require('mongoose');
-const { wrap: async } = require('co');
-const only = require('only');
-const Article = mongoose.model('Article');
-const assign = Object.assign;
+var mongoose = require('mongoose');
+var async = require('co').wrap;
+var only = require('only');
+var Article = mongoose.model('Article');
+var assign = Object.assign;
 
 /**
  * Load

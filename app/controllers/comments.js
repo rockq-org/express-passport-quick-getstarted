@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-const { wrap: async } = require('co');
+var async = require('co').wrap;
 
 /**
  * Load comment

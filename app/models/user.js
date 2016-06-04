@@ -4,11 +4,11 @@
  * Module dependencies.
  */
 
-const mongoose = require('mongoose');
-const crypto = require('crypto');
+var mongoose = require('mongoose');
+var crypto = require('crypto');
 
-const Schema = mongoose.Schema;
-const oAuthTypes = [
+var Schema = mongoose.Schema;
+var oAuthTypes = [
   'github',
   'twitter',
   'facebook',
@@ -20,7 +20,7 @@ const oAuthTypes = [
  * User Schema
  */
 
-const UserSchema = new Schema({
+var UserSchema = new Schema({
   name: { type: String, default: '' },
   email: { type: String, default: '' },
   username: { type: String, default: '' },
@@ -35,7 +35,7 @@ const UserSchema = new Schema({
   linkedin: {}
 });
 
-const validatePresenceOf = value => value && value.length;
+var validatePresenceOf = value => value && value.length;
 
 /**
  * Virtuals
