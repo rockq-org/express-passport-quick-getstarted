@@ -1,0 +1,34 @@
+{
+    "folders":
+    [
+        {
+            "path": ".",
+            "folder_exclude_patterns": 
+            [
+                "logs"
+            ],
+            "file_exclude_patterns": 
+            [
+                "*.sublime-project",
+                "cfignore",
+                "*.sublime-workspace",
+                "*.swp"
+            ]
+        },
+    ],
+    "settings":
+    {
+        "tab_size": 4
+    },
+    "build_systems":
+    [
+        {
+            "name": "build-public",
+            "cmd": ["extras/build-public"],
+            "working_dir": "${project_path}",
+            "env":{
+                "PATH":"$PATH:/usr/local/bin"
+            }
+        }
+    ]
+}
